@@ -1,0 +1,24 @@
+/* Spring Boot Seed Gist */
+
+- Objective: To provide a quick setup for Spring Boot Seed along with basic concepts.
+
+- Pre-requsite
+1) Install Git
+2) Install Maven
+
+- Run
+1) git clone https://github.com/madajee/spring-seed.git
+2) cd /spring-seed/spring-boot-seed
+3) mvn compile
+4) mvn test
+5) mvn package
+6) java -jar target/spring-boot-seed-0.1.0.jar
+7) Look for ********Hello Spring Boot Seed******
+8) mvn clean
+
+- Understanding
+1) @SpringBootApplication covers @Configuration, @EnableAutoConfiguration and @ComponentScan
+2) Dependency for Spring Boot is "spring-boot-starter" specified maven configuration file.
+3) SpringApplication provides a convenient way to bootstrap a spring application & creates the Application Context.
+4) @RunWith(SpringJUnit4ClassRunner.class) is used to instantiate a spring context in the JUnit test.
+5) @ContextConfiguration is used to specify the location of context files.
